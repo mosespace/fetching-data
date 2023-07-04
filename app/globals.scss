@@ -79,3 +79,37 @@ section {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.main-styles{
+  display: flex;
+  flex-direction: row;
+
+  .predictions {
+    color: #000000;
+    background-color: #ffa500;
+    width: 50%;
+    height: 100vh;
+    padding: 0 6rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    scroll-behavior: smooth;
+    
+    .predictionStyles{
+      padding : 4rem 0 ;
+    }
+  }
+  
+  .sports-data{
+    color: #fff;
+    background-color: #000000;
+    width: 50%;
+    height: 100vh
+
+    sportsStyle{
+      display: grid;
+      gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    }
+  }
+}
+
