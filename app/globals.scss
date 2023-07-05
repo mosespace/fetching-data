@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -113,3 +113,122 @@ section {
   }
 }
 
+.full-main-styles{
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3fbfe;
+
+  h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color:#000000;
+    padding: 20px;
+  }
+
+  h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color:#878e96;
+    padding-bottom: 20px;
+    padding-left: 27%;
+    padding-right: 27%;
+  }
+
+  .buttons {
+    display: in-flex;
+    align-items: center;
+    gap: 2rem;
+    margin: auto;
+    justify-content: center;
+    background-color: #e6eef0;
+    
+    button {
+      cursor: pointer;
+      font-size: 16px;
+      color: #000000;
+      background-color: transparent;
+      border: none;
+      padding: 1rem 6rem;
+    }
+
+    .activeBtn {
+      font-weight: 400;
+      background-color: #3bcf8f;
+      color: white;
+      border-radius: 05px;
+    }
+  }
+
+  .card-styles{
+    padding: 0 20px;
+    align-items: center;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 70%;
+    gap: 4rem;
+    // display: grid;
+    // gap: 1rem;
+    // grid-template-rows: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+
+  .card-01,
+  .card-02,
+  .card-03,
+  .card-04{
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 50%;
+    background: #fff;
+    border-radius: 10px;
+
+    h3, h2{
+      padding: 10px 0;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color:#000000;
+
+      span{
+        font-size:4rem ;
+      }
+    }
+    
+    ul{
+      padding: 04px 0;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 400;
+      color:#000000;
+      list-style-type: circle;
+      margin-left: 1em;
+
+      .checked {
+        list-style-type: none;
+      }
+
+      ul.checked li:before {
+        content: "\u2713"; /* Unicode character for the checkmark */
+        margin-right: 0.5em; /* Adjust the spacing between the checkmark and text */
+      }
+    }
+
+    button{
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: 400;
+      padding: 1rem 3rem;
+      border: none;
+      border-radius: 05px;
+      background-color: #3bcf8f;
+    }
+  }
+}
