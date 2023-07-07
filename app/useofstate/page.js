@@ -12,32 +12,6 @@ export default function page() {
   )
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 'use client'
 // // import Prices from '@/components/Prices';
 // import React, { useState } from 'react'
